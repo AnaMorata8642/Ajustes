@@ -1,0 +1,80 @@
+<!-- <div class="container">
+    <div class="table-container">
+        <p></p>
+        <div class="barra-superior">
+            <button class="add-button" (click)="adicionarItem()" title="Adicionar novo">
+              <i class="bi bi-plus-lg"></i>
+            </button>
+          
+            <div class="search-box">
+              <input
+                type="text"
+                [(ngModel)]="termoBusca"
+                (input)="buscar()"
+                placeholder="Busca..."
+              />
+              <i class="bi bi-search search-icon" (click)="buscar()" title="Buscar"></i>
+            </div>
+        </div>
+      <table>
+        <thead>
+          <tr>
+            <th style="width: 10%;">Id</th>
+            <th style="width: 50%;">Nome</th>
+            <th style="width: 20%;">Ações</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let pessoa of pessoas">
+            <td style="width: 10%; text-align: center;">{{ pessoa.id }}</td>
+            <td style="width: 50%;">{{ pessoa.nome }}</td>
+            <td style="width: 20%; text-align: center;">
+              <button class="action-btn edit">✏️</button>
+              <button class="action-btn view">👁️</button>
+              <button class="action-btn delete">🗑️</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div> -->
+<app-menu-vert></app-menu-vert>
+<app-perfil-us></app-perfil-us>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+<div class="container">
+  <div class="row">
+    <div class="barra-superior">
+      <button class="add-button" (click)="adicionarItem()" title="Adicionar novo">
+        <!-- <a routerLink="/cadastro-cliente"></a> -->
+        <i class="bi bi-plus-lg"></i>
+      </button>
+
+      <div class="search-box">
+        <input type="text" [(ngModel)]="termoBusca" (input)="buscar()" placeholder="Busca..." />
+        <i class="bi bi-search search-icon" (click)="buscar()" title="Buscar"></i>
+      </div>
+    </div>
+    <div class="col table-container">
+      <table>
+        <thead>
+          <tr>
+            <th style="width: 10%;">Id</th>
+            <th style="width: 50%; text-align: center;">Nome</th>
+            <th style="width: 20%;"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let pessoa of pessoas">
+            <td style="width: 10%; text-align: center;">{{ pessoa.id }}</td>
+            <td style="width: 50%;">{{ pessoa.nome }}</td>
+            <td style="width: 20%; text-align: center;">
+              <button class="action-btn edit"><i class="bi bi-pencil-square"></i></button>
+              <button class="action-btn delete"><i class="bi bi-trash3-fill"></i></button>
+              <button class="action-btn view"><i class="bi bi-eye-fill"></i></button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,298 @@
+.body {
+    background-color: rgb(194, 205, 217, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    background: transparent;
+    padding: 20px;
+    border-radius: 50px;
+    border: 2px solid #014BA0;
+    width: 750px;
+    height: 450px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.logo-container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: left;
+    width: 60%;
+    position: relative;
+    left: -18px;
+    top: 18px;
+}
+
+.logo-container img {
+    max-width: 100%;
+}
+
+.form-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    top: 25px;
+    /* Ajuste conforme necessário */
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #014BA0;
+    width: 100%;
+    padding: 5px 0;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.input-group i {
+    font-size: 20px;
+    margin-right: 10px;
+    color: #014BA0;
+}
+
+.input-group input {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    width: 100%;
+    background: transparent;
+}
+
+#senha {
+    width: 73%;
+    position: relative;
+    right: 5px;
+}
+
+#sen {
+    margin-right: -1px;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 5px;
+    cursor: pointer;
+    color: #014BA0;
+}
+
+.btn {
+    width: 65%;
+    padding: 6px;
+    background: #014BA0;
+    color: white;
+    border: 2px solid #062863;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 20px;
+    border-color: #062863;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    transition: 1s;
+}
+
+.btn:hover {
+    background-color: #062863;
+}
+
+.toggle-container {
+    display: flex;
+    border: 2px solid #062863;
+    border-radius: 30px;
+    overflow: hidden;
+    position: relative;
+    width: 200px;
+    cursor: pointer;
+    background-color: #FFEAA1;
+    /* Cor de fundo fixa */
+}
+
+.toggle-option {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+    /* font-family: "Comic Sans MS", cursive, sans-serif; */
+    position: relative;
+    z-index: 2;
+    transition: color 0.3s ease-in-out;
+}
+
+.active {
+    color: white;
+    font-weight: bold;
+}
+
+.inactive {
+    color: #062863;
+}
+
+.toggle-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #014BA0;
+    border-radius: 30px;
+    transition: left 0.3s ease-in-out;
+    z-index: 1;
+}
+
+#fade_In {
+    animation: loading 1s;
+}
+
+@keyframes loading {
+    0% {
+
+        transform: rotateY(100deg);
+    }
+
+    100% {
+        transform: rotateY(0)
+    }
+}
+
+@media screen and (min-width: 2560px) {
+    .container {
+        border-radius: 80px;
+        border: 3px solid #014BA0;
+        width: 1450px;
+        height: 850px;
+    }
+
+    .tabs {
+        top: 30px;
+    }
+
+    .input-group {
+        border-bottom: 3px solid #014BA0;
+        margin-bottom: 80px;
+    }
+
+    .input-group i {
+        font-size: 60px;
+    }
+
+    .input-group input {
+        font-size: 35px;
+    }
+
+    #senha {
+        width: 68%;
+        right: 1px;
+    }
+
+    .btn {
+        border: 3px solid #062863;
+        border-radius: 25px;
+        font-size: 35px;
+    }
+
+    .toggle-container {
+        border: 3px solid #062863;
+        border-radius: 40px;
+        width: 500px;
+    }
+
+    .toggle-option {
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 1440px) and (max-width: 2559px) {
+    .container {
+        width: 950px;
+        height: 550px;
+    }
+
+    .input-group i {
+        font-size: 35px;
+    }
+
+    .input-group input {
+        font-size: 22px;
+    }
+
+    #senha {
+        width: 68%;
+        right: 1px;
+    }
+
+    .btn {
+        width: 60%;
+        font-size: 22px;
+    }
+
+    .toggle-container {
+        width: 250px;
+    }
+
+    .toggle-option {
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+    #senha {
+        right: 1px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        width: 600px;
+        height: 400px;
+    }
+
+    .logo-container {
+        width: 65%;
+    }
+
+    .logo-container img {
+        height: 100%;
+    }
+
+    .tabs {
+        top: 20px;
+    }
+
+    .input-group input {
+        font-size: 15px;
+    }
+
+    #senha {
+        right: 1px;
+    }
+
+    .btn {
+        font-size: 15px;
+    }
+
+    .toggle-container {
+        width: 190px;
+    }
+
+    .toggle-option {
+        font-size: 17px;
+    }
+}

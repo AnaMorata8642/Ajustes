@@ -1,0 +1,112 @@
+.body {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    /* width: 80%; */
+    position: absolute;
+}
+
+.card h2 {
+    font-size: 40px;
+    /* margin: 0 0 25%; */
+    color: #062863;
+    /* margin-top: -10%;
+    margin-bottom: 20%; */
+    width: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    /* border: 2px solid blue; */
+
+}
+
+.card {
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150%;
+    position: relative;
+    right: 45%;
+    margin-top: -50px;
+    margin-bottom: 5%;
+}
+
+.id-badge {
+    background-color: #5b87b9;
+    color: black;
+    font-weight: bold;
+    border-radius: 50px;
+    padding: 6px 14px;
+    display: inline-block;
+    /* position: absolute; */
+    top: 11.5%;
+    left: -10%;
+    cursor: pointer;
+    padding: 5px 20px;
+    font-size: 25px;
+    border: 1px solid #062863;
+    width: 15%;
+    height: 10%;
+    /* border: 2px solid purple; */
+}
+
+.info {
+    color: #1a1a1a;
+    text-align: left;
+    /* margin-top: 10px; */
+}
+
+.info p {
+    margin: 3px 0;
+    color: #062863;
+    font-size: 30px;
+    text-align: center;
+    margin: 0 0 5%;
+   
+
+}
+
+/* .seta{
+    font-size: 23px;
+    color: #003366;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;  */
+/* margin-top: 4%;  */
+
+
+.header {
+    display: flex;
+    width: 3%;
+    height: auto;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    gap: 0.5rem;
+    /* margin: 2%;  */
+    padding: 3% 8%;
+    /* margin-left: -70%;
+    margin-top: -10%;
+    margin-bottom: -20%; */
+    /* border: 2px solid orange; */
+}
+
+.header button {
+    font-size: 30px;
+    color: #003366;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.tudo {
+    flex-direction: column;
+    position: relative;
+    left: 90%;
+    /* border: 2px solid green; */
+}

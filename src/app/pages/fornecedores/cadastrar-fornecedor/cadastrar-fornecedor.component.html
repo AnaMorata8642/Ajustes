@@ -1,0 +1,65 @@
+<app-menu-vert></app-menu-vert>
+<app-perfil-us></app-perfil-us>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.12.1/font/bootstrap-icons.min.css">
+
+<div class="body">
+    <div class="container">
+        <header class="header">
+            <button class="seta"><i class="bi bi-arrow-left"></i></button>
+            <button class="top-button">CADASTRAR NOVO FORNECEDOR</button>
+        </header>
+
+        <form class="formulario">
+            <div class="campo">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" value="Carla Meire Teixeira Silva">
+            </div>
+            <div class="campo">
+                <label for="endereco">Endereço:</label>
+                <input type="text" id="endereço" name="endereco" value="Rua Salvador Arnoni">
+            </div>
+            <div class="campo">
+                <label for="bairro">Bairro:</label>
+                <input type="text" id="bairro" name="bairro" value="Jardim São Sebastião">
+            </div>
+            <div class="linha-dupla">
+                <div class="campo">
+                    <label for="cidade">Cidade:</label>
+                    <input type="text" id="cidade" name="cidade" value="Ribeirão Preto">
+                </div>
+
+                <div class="campo">
+                    <label for="estado">Estado:</label>
+                    <div class="dropdown-wrapper">
+                        <div class="dropdown-display" id="dropdownDisplay">
+                            <span id="dropdownText">Selecione...</span>
+                            <span class="dropdown-arrow" id="dropdownArrow"><i class="bi bi-caret-down-fill"></i></span>
+                        </div>
+                        <div class="dropdown-options" id="dropdownOptions"></div>
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="campo">
+                    <label for="email">E-mail:</label>
+                    <input type="text" id="email" name="email" value="carlameire@gmail.com">
+                </div>
+
+                <div class="campo">
+                    <label for="telefone">Telefone:</label>
+                    <input type="telefone" id="telefone" name="telefone" value="(16)997227406">
+                </div>
+                <div class="campo">
+                    <label for="cnpj">CNPJ:</label>
+                    <input type="cnpj" id="cnpj" name="cnpj" value="09878665656/08-09">
+                </div>
+
+                <div class="botoes">
+                    <button type="submit" class="salvar">SALVAR</button>
+                    <button type="button" class="cancelar">CANCELAR</button>
+                </div>
+            </div>

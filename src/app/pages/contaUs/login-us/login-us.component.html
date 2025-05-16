@@ -1,0 +1,34 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+<div class="body">
+    <div class="container" id="fade_In">
+        <div class="logo-container">
+            <img src="../../../../assets/image_1.png" alt="Logo Albertu's">
+        </div>
+        <div class="tabs">
+            <div class="toggle-container" (click)="toggleSwitch()">
+                <div class="toggle-bg left" id="toggle-bg"></div>
+                <div class="toggle-option active" id="cadastro" [routerLink]="['/cadastro-us']">Cadastro</div>
+                <div class="toggle-option inactive" id="login" [routerLink]="['/']">Login</div>
+            </div>
+        </div>
+        <div class="form-container">
+
+            <form>
+                <div class="input-group">
+                    <i class="bi bi-person-fill"></i>
+                    <input type="text" id="usuario" placeholder="Usuário">
+                </div>
+
+                <div class="input-group">
+                    <i class="bi bi-lock-fill"></i>
+                    <input type="password" id="senha" placeholder="Senha">
+                    <i class="bi bi-eye-slash toggle-password" id="sen" (click)="toggleSenha()"></i>
+                </div>
+
+            </form>
+            <!-- <button class="btn" [routerLink]="['/meta-q']">Entrar</button> -->
+            <button class="btn">Entrar</button>
+        </div>
+    </div>
+</div>

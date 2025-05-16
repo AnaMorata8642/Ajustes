@@ -1,0 +1,32 @@
+<div class="tela" (click)="fecharDialog()">
+
+    <div class="corpo">
+        <div class="circlePerfil" (click)="alternarDialog($event)">
+            <label for="">K</label>
+        </div>
+    </div>
+
+    <div class="setaL" *ngIf="dialogAberto"></div>
+
+    <dialog #dialogRef (click)="$event.stopPropagation()">
+        <div class="group">
+            <div class="somb">
+                <label for="">Karen</label>
+            </div>
+
+            <div class="ball">
+                <label for="">K</label>
+            </div>
+
+            <div class="infEmail">
+                <label for="">karen_gmail.com</label>
+            </div>
+
+            <div class="linha1"></div>
+
+            <div class="btnSair">
+                <button>Sair</button>
+            </div>
+        </div>
+    </dialog>
+</div>

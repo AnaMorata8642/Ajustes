@@ -1,0 +1,231 @@
+.container {
+    padding-top: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #d7e4e8; */
+    /* width: 100vw;
+    height: 100vh; */
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    position: absolute;
+    /* border: 2px solid red; */
+    width: 83%;
+    height: 100%;
+    margin-left: 10%;
+    padding-left: 7%;
+
+  }
+  
+  .table-container {
+    width: 800px;
+    border-radius: 15px;
+    background-color: transparent;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    height: 55%;
+    position: relative;
+    bottom: 15px;
+  }
+  
+  .table-container table {
+    width: 800px;
+    border-collapse: collapse;
+    background-color: #003366;
+    color: white;
+    table-layout: fixed;
+  }
+  
+  thead {
+    background-color: #062a60;
+    position: sticky;
+    top: 0;
+    z-index: 0;
+  }
+  
+  tbody {
+    display: block;
+    max-height: 400px;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  
+  thead tr, tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+  }
+  
+  td{
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  th {
+    border-bottom: 1px solid white;
+    padding: 12px;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  
+  th:first-child, td:first-child {
+    border-left: 1px solid white;
+  }
+  
+  th:last-child, td:last-child {
+    border-right: none;
+  }
+  
+  tbody tr:last-child td {
+    border-bottom: none;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #062a60;
+  }
+  
+  tbody tr:nth-child(odd) {
+    background-color: #0747a6;
+  }
+  
+  tbody tr:hover {
+    background-color: #004080;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Definindo largura fixa das colunas */
+  th:nth-child(1), td:nth-child(1) {
+    width: 100px;
+    text-align: center;
+  }
+  
+  th:nth-child(2), td:nth-child(2) {
+    width: 200px;
+  }
+  
+  th:nth-child(3), td:nth-child(3) {
+    width: 100px;
+    text-align: center;
+  }
+  
+  .action-btn {
+    background: none;
+    border: none;
+    color: rgb(238, 232, 232);
+    cursor: pointer;
+    margin-right: 8px;
+    font-size: 18px;
+  }
+  
+  .action-btn.edit:hover {
+    color: #fadf2a;
+  }
+  
+  .action-btn:hover {
+    color: #f44336;
+  }
+  
+  .action-btn.view:hover {
+    color: #4caf50;
+  }
+  
+  tbody::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  tbody::-webkit-scrollbar-track {
+    background: #ffffff;
+    border-radius: 8px;
+  }
+  
+  tbody::-webkit-scrollbar-thumb {
+    background: #8a8a8a;
+    border-radius: 8px;
+  }
+  
+  tbody::-webkit-scrollbar-thumb:hover {
+    background: #333;
+  }
+
+
+  /*-----------------------------------------------------------*/
+  .top-bar {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  .add-button {
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(15, 113, 155, 0.2);
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-button:hover {
+    background-color: #1b5e20;
+  }
+  
+  .search-box {
+    background-color: #cbd5e1;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    height: 45px;
+    width: 300px;
+    box-shadow: inset 0 1px 3px rgba(79, 29, 29, 0.1);
+  }
+  
+  .search-box input {
+    border: none;
+    background: transparent;
+    outline: none;
+    padding: 0 10px;
+    flex: 1;
+    color: #0f0f0f;
+    font-weight: bold;
+  }
+  
+  .search-icon {
+    color: #082e66;
+    cursor: pointer;
+    font-size: 1.2rem;
+  }
+  
+
+  .barra-superior {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 20px;
+    position: relative;
+    bottom: 25px;
+  }
+
+  .action-btn edit{
+    padding: 0 10px;
+  }
+
+.action-btn.delete{
+  justify-content: space-between;
+  padding: 0 20px;
+}
