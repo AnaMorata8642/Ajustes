@@ -1,0 +1,69 @@
+<app-menu-vert></app-menu-vert>
+<app-perfil-us></app-perfil-us>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.12.1/font/bootstrap-icons.min.css">
+
+<div class="body">
+    <div class="container">
+        <aside class="sidebar">
+
+            <main class="content">
+                <header class="header">
+                    <h1>Compras</h1>
+                </header>
+
+
+
+
+
+                <header class="header_total">
+                    <button class="btn-new"> + Novo </button>
+                    <div class="totals">
+                        <h2>Valor de Pedidos: </h2>
+                        <p>7</p>
+                        <h2>Valor Total: </h2>
+                        <p>R$000000,00</p>
+                        <!-- <span>Total de Pedidos: <strong>7</strong> &nbsp; &nbsp; &nbsp;&nbsp; Valor total: <strong>R$00000,00</strong></span> -->
+                    </div>
+                </header>
+
+                <!-- Tabela -->
+                <section class="table-section">
+                    <div class="tabela-scroll-container">
+                        <table>
+                            <thead class="table-normal">
+                                <tr>
+                                    <th class="col-id">Id</th>
+                                    <th class="col-valor">Valor</th>
+                                    <th class="col-fornecedor">Fornecedor</th>
+                                    <th class="col-previsao" colspan="2">Previsão de recebimento</th>
+                                </tr>
+                            </thead>
+                            <tbody id="order-list">
+                                <tr *ngFor="let pedido of pedidos">
+                                    <td>{{ pedido.id }}</td>
+                                    <td>{{ pedido.valor }}</td>
+                                    <td>{{ pedido.fornecedor }}</td>
+                                    <td>{{ pedido.previsao }}</td>
+                                    <td>
+                                        <button class="btn-verificar">Verificar</button>
+                                        <button class="btn-delete">
+                                            <i class="bi bi-trash-fill"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+
+
+                        </table>
+                    </div>
+                </section>
+
+                <header class="historico">
+                    <button class="hist"><i class="bi bi-file-earmark-text"></i></button>
+                </header>
+
+            </main>
+
+        </aside>
+    </div>

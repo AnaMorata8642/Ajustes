@@ -12,6 +12,8 @@ import { EditarClienteComponent } from './pages/clientes/editar-cliente/editar-c
 import { VisualizacaoClienteComponent } from './pages/clientes/visualizacao-cliente/visualizacao-cliente.component';
 import { CadastrarFornecedorComponent } from './pages/fornecedores/cadastrar-fornecedor/cadastrar-fornecedor.component';
 import { EditarFornecedorComponent } from './pages/fornecedores/editar-fornecedor/editar-fornecedor.component';
+import { VisuContaClienteComponent } from './pages/clientes/visu-conta-cliente/visu-conta-cliente.component';
+import { InicialCompraComponent } from './pages/compras/inicial-compra/inicial-compra.component';
 
 export const routes: Routes = [
     { path: '', component: LoginUsComponent},
@@ -25,5 +27,8 @@ export const routes: Routes = [
     { path: 'editar-cliente', component: EditarClienteComponent},
     { path: 'visualizacao-cliente', component: VisualizacaoClienteComponent},
     { path: 'cadastrar-fornecedor', component: CadastrarFornecedorComponent},
-    { path: 'editar-fornecedor', component: EditarFornecedorComponent}
+    { path: 'editar-fornecedor', component: EditarFornecedorComponent},
+    { path: 'visu-conta-cliente', component: VisuContaClienteComponent},
+    { path: 'inicial-compras', component: InicialCompraComponent}
+
 ];

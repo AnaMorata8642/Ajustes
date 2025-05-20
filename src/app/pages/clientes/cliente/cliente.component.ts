@@ -4,11 +4,10 @@ import { FormsModule } from '@angular/forms';
 import { MenuVertComponent } from '../../shared/menu-vert/menu-vert.component';
 import { PerfilUsComponent } from '../../shared/perfil-us/perfil-us.component';
 import { RouterLink } from '@angular/router';
-import { CadastroClienteComponent } from '../cadastro-cliente/cadastro-cliente.component';
 
 @Component({
   selector: 'app-cliente',
-  imports: [FormsModule, CommonModule, MenuVertComponent, PerfilUsComponent, RouterLink],
+  imports: [FormsModule, CommonModule, MenuVertComponent, PerfilUsComponent],
   templateUrl: './cliente.component.html',
   styleUrl: './cliente.component.css'
 })

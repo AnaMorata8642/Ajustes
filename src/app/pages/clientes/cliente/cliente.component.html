@@ -44,10 +44,9 @@
 <div class="container">
   <div class="row">
     <div class="barra-superior">
-      <button class="add-button" (click)="adicionarItem()" title="Adicionar novo">
-        <!-- <a routerLink="/cadastro-cliente"></a> -->
-        <i class="bi bi-plus-lg"></i>
-      </button>
+        <button class="add-button" (click)="adicionarItem()" title="Adicionar novo">
+          <i class="bi bi-plus-lg"></i>
+        </button>
 
       <div class="search-box">
         <input type="text" [(ngModel)]="termoBusca" (input)="buscar()" placeholder="Busca..." />
